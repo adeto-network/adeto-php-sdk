@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adeto.ir - Request Captcha</title>
+
+    <!-- Require adeto.js -->
+    <script type="text/javascript" src="https://cdn.adeto.ir/js/adeto.js" async></script>
+
+</head>
+<body>
+
+
+    <form action="verify_captcha_example.php" method="POST">
+
+        <!--
+        The following DIV will make a captcha in Farsi language.
+        -->
+        <div id="adeto" data-publisherkey="YOUR_PUBLISHER_KEY"></div>
+
+        <!--
+        If you want the captcha to be in English, use this:
+        <div id="adeto" data-publisherkey="YOUR_PUBLISHER_KEY" data-lang="en"></div>
+        -->
+
+        <br><br>
+        <button type="submit">CHECK</button>
+
+    </form>
+
+
+
+</body>
+</html>
